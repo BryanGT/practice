@@ -1,0 +1,17 @@
+$results: '.main-results';
+
+#{$results} {
+    text-align: center;
+
+    &__title {
+        text-transform: capitalize;
+        margin-top: 3rem;
+    }
+
+    &__cta {
+        max-width: 300px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+}

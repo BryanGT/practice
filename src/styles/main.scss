@@ -1,9 +1,12 @@
-$base-color: #fff;
-$color: rgb(black, 0.88);
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import './variables';
+@import './typography';
 
 body {
-    background-color: $base-color;
-    color: $color;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: var(--base-color);
+    color: var(--primary-black);
     margin: 0;
     padding: 0;
 }

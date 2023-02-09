@@ -1,0 +1,31 @@
+@import '../../styles/main.scss';
+
+body {
+    background-color: var(--seabright-yellow);
+}
+
+.main-barista {
+    text-align: center;
+
+    &__box {
+        max-width: 293px;
+        margin: 5rem auto 0;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    @media (min-width: 768px) {
+        &__box {
+            max-width: 486px;
+        }
+
+        p {
+            font-size: 28px;
+            line-height: 130%;
+        }
+    }
+}

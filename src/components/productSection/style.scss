@@ -1,0 +1,43 @@
+@import '@styles/variables';
+
+$productSection: '.product-section';
+
+#{$productSection} {
+    border-top: 1.5px dashed var(--primary-black);
+    padding: 2rem 1rem;
+    text-align: left;
+
+    &__title {
+        font-weight: 400;
+        font-size: 12px;
+        opacity: 0.7;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        &--one {
+            text-transform: uppercase;
+        }
+
+        &--two {
+            background: url('@icons/product-two.svg') no-repeat left center;
+            padding: 1rem 0 1rem 5rem;
+        }
+
+        &--three {
+            background: url('@icons/tasting-notes.svg') no-repeat left center;
+            padding: 1rem 0 1rem 5rem;
+        }
+
+        &--four {
+            background: url('@icons/sipping.svg') no-repeat left center;
+            padding: 1rem 0 1rem 5rem;
+        }
+
+        &--five {
+            background: url('@icons/brew.svg') no-repeat left center;
+            padding: 1rem 0 1rem 5rem;
+        }
+    }
+}

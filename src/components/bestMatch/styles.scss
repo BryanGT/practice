@@ -1,0 +1,22 @@
+$bestMatch: '.best-match';
+
+#{$bestMatch} {
+    padding: 1rem  0;
+    margin-top: 1.5rem;
+    background: rgba(34, 34, 34, 0.05);
+
+    &__information {
+        margin-bottom: 1rem;
+
+        &-title {
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 1rem 0 0.5rem;
+        }
+
+        &-price {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}

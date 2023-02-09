@@ -1,0 +1,36 @@
+@import '@styles/variables';
+
+$btn: '.btn';
+
+#{$btn} {
+    border: 0;
+
+    &-primary {
+        padding: 12px 15px 10px;
+        color: var(--white);
+        background-color: var(--primary-black);
+        border:0;
+    }
+
+    &-simple {
+        font-weight: 400;
+        font-size: 17px;
+        color: var(--primary-black);
+        border-bottom: 1px solid var(--primary-black);
+        background-color: transparent;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+    }
+
+    &-mobile {
+        padding: 12px 15px 10px;
+        color: var(--white);
+        background-color: var(--primary-black);
+        border:0;
+        position: fixed;
+        bottom: 0;  
+        left: 0;
+        width: 100%;
+    }
+}
