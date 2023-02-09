@@ -1,0 +1,37 @@
+@import '../../styles/variables';
+
+$header: '.header';
+
+#{$header} {
+    background-color: var(--primary-black);
+
+    &-nav {
+        overflow: hidden;
+        position: relative;
+
+        &__title {
+            color: var(--white);
+            text-decoration: none;
+            text-align: center;
+        }
+
+        &__wrapper {
+            display: none;
+        }
+
+        a {
+            color: var(--white);
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+
+        a.icon {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
