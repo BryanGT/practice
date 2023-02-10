@@ -1,5 +1,67 @@
 @import '@styles/variables';
 
+.brew-option {
+    width: 50%;
+
+    @media (max-width: 768px) {
+        &--7 {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 768px) {
+        &--1 {
+            transform: rotate(-12deg);
+
+            .box {
+                top: -27px;
+                right: -31px
+            }
+        }
+        &--2 {
+            transform: rotate(-8deg);
+            .box {
+                top: -54px;
+                left: 45px;
+            }
+        }
+        &--3 {
+            transform: rotate(-4deg);
+            .box {
+                top: -70px;
+                left: 23px;
+            }
+        }
+        &--4 {
+            .box {
+                top: 0;
+            }
+        }
+        &--5 {
+            transform: rotate(4deg);
+            .box {
+                top: -69px;
+                left: -24px;
+            }
+        }
+        &--6 {
+            transform: rotate(8deg);
+            .box {
+                top: -51px;
+                right: 75px;
+            }
+        }
+        &--7 {
+            transform: rotate(12deg);
+            .box {
+                top: -23px;
+                right: 90px;
+            }
+        }
+    }
+}
+
 input[type="radio"] {
     display: none;
 
@@ -41,9 +103,10 @@ input[type="radio"] {
 }
 
 .box {
-    width: 160px;
-    height: 160px;
-    padding: 2rem;
+    width: 100%;
+    max-width: 159px;
+    height: 130px;
+    padding: 0.5rem;
     background-color: #2222;
     transition: all 250ms ease;
     will-change: transition;
@@ -53,6 +116,10 @@ input[type="radio"] {
     position: relative;
     font-weight: 900;
     opacity: 0.5;
+    @media (min-width: 768px) {
+        position: absolute;
+        width: 105px;
+    }
 
     &:active {
         transform: translateY(10px);
@@ -64,12 +131,12 @@ input[type="radio"] {
         left: 0;
         right: 0;
         transition: all 300ms ease;
-        font-size: 1.5em;
+        font-size: 14px;
         user-select: none;
         color: var(--primary-black);
 
         &:before {
-            font-size: 1.2em;
+            font-size: 15px;
             display: block;
             transform: translateY(-80px);
             opacity: 0;
@@ -81,31 +148,31 @@ input[type="radio"] {
 
     &--maker {
         background: url('@icons/coffee-maker-desktop.svg') no-repeat center 1.5rem;
-        background-color: #E9E4DB;
+        background-color: #2222;
         background-size: 30%;
     }
     &--french {
-        background: #E9E4DB url('@icons/french-press-desktop.svg') no-repeat center 1.5rem;
+        background: #2222 url('@icons/french-press-desktop.svg') no-repeat center 1.5rem;
         background-size: 30%;
     }
     &--pour {
-        background: #E9E4DB url('@icons/pour-over-desktop.svg') no-repeat center 1.5rem;
+        background: #2222 url('@icons/pour-over-desktop.svg') no-repeat center 1.5rem;
         background-size: 30%;
     }
     &--aero {
-        background: #E9E4DB url('@icons/aeropress-desktop.svg') no-repeat center 1.5rem;
+        background: #2222 url('@icons/aeropress-desktop.svg') no-repeat center 1.5rem;
         background-size: 30%;
     }
     &--espresso {
-        background: #E9E4DB url('@icons/espresso-desktop.svg') no-repeat center 1.5rem;
+        background: #2222 url('@icons/espresso-desktop.svg') no-repeat center 1.5rem;
         background-size: 30%;
     }
     &--pods {
-        background: #E9E4DB url('@icons/pods-desktop.svg') no-repeat center 1.5rem;
+        background: #2222 url('@icons/pods-desktop.svg') no-repeat center 1.5rem;
         background-size: 30%;
     }
     &--moka {
-        background: #E9E4DB url('@icons/pour-over-desktop.svg') no-repeat center 1.5rem;
+        background: #2222 url('@icons/pour-over-desktop.svg') no-repeat center 1.5rem;
         background-size: 30%;
     }
 }

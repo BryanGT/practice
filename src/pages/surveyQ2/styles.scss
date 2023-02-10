@@ -23,4 +23,20 @@
             font-size: 30px !important;
         }
     }
+
+    &__options {
+        align-items: center;
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        margin: 2rem 0 3rem;
+
+        @media (min-width: 768px) {
+            flex-wrap: nowrap;
+            position: relative;
+            min-height: 150px;
+            max-width: 950px;
+            margin: 2rem auto;
+        }
+    }
 }

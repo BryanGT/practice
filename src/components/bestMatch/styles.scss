@@ -1,9 +1,16 @@
+@import '@styles/variables';
+
 $bestMatch: '.best-match';
 
 #{$bestMatch} {
     padding: 1rem  0;
-    margin-top: 1.5rem;
+    margin: 1.5rem 0;
     background: rgba(34, 34, 34, 0.05);
+
+    &__title {
+        color: #7E836D;
+        text-transform: uppercase;
+    }
 
     &__information {
         margin-bottom: 1rem;
@@ -17,6 +24,31 @@ $bestMatch: '.best-match';
         &-price {
             font-size: 18px;
             font-weight: 700;
+        }
+    }
+
+    @media (min-width: 768px) {
+        margin: 1.5rem auto;
+        max-width: 1200px;
+
+        &__title {
+            font-size: 23px;
+        }
+
+        &__product {
+            display: flex;
+
+            &-information {
+                width: 30%;
+                border-right: 1px dotted var(--primary-black);
+            }
+
+            &-description {
+                width: 70%;
+                display: flex;
+                flex-flow: row;
+                flex-wrap: wrap;
+            }
         }
     }
 }

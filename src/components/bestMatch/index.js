@@ -31,20 +31,24 @@ const bestMatchData = {
 function BestMatch() {
     return(
         <div className='best-match'>
-            <h1 className='best-match__title heading-one'>Best Match</h1>
             <div className='best-match__product'>
-                <div className='best-match__product-image'>
-                    <img src={imgProduct} alt="product"></img>
+                <div className='best-match__product-information'>
+                    <h1 className='best-match__title heading-one'>Best Match</h1>
+                    <div className='best-match__product-image'>
+                        <img src={imgProduct} alt="product"></img>
+                    </div>
+                    <div className='best-match__information'>
+                        <h5 className='best-match__information-title'>{bestMatchData.name}</h5>
+                        <span className='best-match__information-price'>{bestMatchData.price}</span>
+                    </div>
                 </div>
-                <div className='best-match__information'>
-                    <h5 className='best-match__information-title'>{bestMatchData.name}</h5>
-                    <span className='best-match__information-price'>{bestMatchData.price}</span>
+                <div className='best-match__product-description'>
+                    <ProductSection number="one" title={bestMatchData.first_section.title} description={bestMatchData.first_section.description} />
+                    <ProductSection number="two" title={bestMatchData.second_section.title} description={bestMatchData.second_section.description} />
+                    <ProductSection number="three" title={bestMatchData.third_section.title} description={bestMatchData.third_section.description} />
+                    <ProductSection number="four" title={bestMatchData.fourth_section.title} description={bestMatchData.fourth_section.description} />
+                    <ProductSection number="five" title={bestMatchData.fifth_section.title} description={bestMatchData.fifth_section.description} />
                 </div>
-                <ProductSection number="one" title={bestMatchData.first_section.title} description={bestMatchData.first_section.description} />
-                <ProductSection number="two" title={bestMatchData.second_section.title} description={bestMatchData.second_section.description} />
-                <ProductSection number="three" title={bestMatchData.third_section.title} description={bestMatchData.third_section.description} />
-                <ProductSection number="four" title={bestMatchData.fourth_section.title} description={bestMatchData.fourth_section.description} />
-                <ProductSection number="five" title={bestMatchData.fifth_section.title} description={bestMatchData.fifth_section.description} />
             </div>
         </div>
     )

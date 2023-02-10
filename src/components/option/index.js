@@ -10,7 +10,7 @@ const Option = ({...props}) => {
     }
 
     return (
-        <label onClick={handleClick} className={option}>
+        <label onClick={handleClick} className={`brew-option brew-option--${props.position} ${option}`}>
             <input type="radio" name="radio" />
             <div className={`box box--${props.value}`}>
             <span>{props.text}</span>
