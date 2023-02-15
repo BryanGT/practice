@@ -2,8 +2,6 @@ import React from 'react';
 import ProgressBar from '@components/progressBar';
 import Option from '@components/option';
 import Button from '@components/button';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import './styles.scss';
 
 const SurveyQ2 = () => {
